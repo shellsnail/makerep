@@ -12,29 +12,18 @@ import {
 } from 'react-router-dom';
 
 class App extends React.Component {
+
+  name = "Chairman Meow";
+  breed = "Sphynx";
+
+  getBreed = () => {
+    return this.name + ' is a ' + this.breed;
+    }
+
   render() {
     return (
       <div>
-        <Grid padded>
-          <Grid.Column width={5}>
-            <
-              DisplayCategories
-            />
-            <
-              FeedbackForm
-            />
-          </Grid.Column>
-          <Grid.Column width={7}>
-            <
-              DisplayProductsLargeView
-            />
-          </Grid.Column>
-          <Grid.Column width={4}>
-            <
-              DisplayProductsMediumView
-            />
-          </Grid.Column>
-        </Grid>
+        {this.getBreed()}
       </div>
     );
   }
