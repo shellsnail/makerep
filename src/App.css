@@ -9,3 +9,7 @@
 .categories-header {
   margin: 0;
 }
+
+body {
+  padding-top: 20px;
+}

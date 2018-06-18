@@ -13,6 +13,21 @@ class FeedbackForm extends React.Component {
       text: 'General Enquiry',
       value: 'General Enquiry',
     },
+    {
+      id : 3,
+      text: 'Corporate Enquiry',
+      value: 'Corporate Enquiry',
+    },
+    {
+      id : 4,
+      text: 'Technical Enquiry',
+      value: 'Technical Enquiry',
+    },
+    {
+      id : 5,
+      text: 'A career with us!',
+      value: 'A career with us!',
+    },
   ];
 
   render() {
