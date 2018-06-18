@@ -1,6 +1,6 @@
 const rewireMobX = require('react-app-rewire-mobx');
 const {injectBabelPlugin} = require('react-app-rewired');
-const rewirePreact = require('react-app-rewire-preact');O
+const rewirePreact = require('react-app-rewire-preact');
 
 /* config-overrides.js */
 
