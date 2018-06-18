@@ -1,7 +1,9 @@
 import React from 'react';
-import DisplayCategories from './categories.js';
-import FeedbackForm from './forms.js';
-import {DisplayProductsLargeView, DisplayProductsMediumView} from './products.js';
+import DisplayCategories from './displaycategories.js';
+import FeedbackForm from './feedbackform.js';
+import DisplayProductsLargeView from './displayproductslargeview.js';
+import DisplayProductsMediumView from './displayproductsmediumview.js';
+import SearchExampleCategory from './searchbar.js';
 import './App.css';
 import {Grid, Image} from 'semantic-ui-react';
 import {
@@ -13,17 +15,36 @@ import {
 
 class App extends React.Component {
 
-  name = "Chairman Meow";
-  breed = "Sphynx";
-
-  getBreed = () => {
-    return this.name + ' is a ' + this.breed;
-    }
-
   render() {
     return (
       <div>
-        {this.getBreed()}
+        <Grid padded>
+          <Grid.Column width={5}>
+            <Grid.Row>
+              <
+                DisplayCategories
+              />
+            </Grid.Row>
+            <Grid.Row>
+              <
+               SearchExampleCategory
+              />
+            </Grid.Row>
+              <
+                FeedbackForm
+              />
+          </Grid.Column>
+          <Grid.Column width={7}>
+            <
+              DisplayProductsLargeView
+            />
+          </Grid.Column>
+          <Grid.Column width={4}>
+            <
+              DisplayProductsMediumView
+            />
+          </Grid.Column>
+        </Grid>
       </div>
     );
   }
